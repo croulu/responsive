@@ -1,3 +1,92 @@
+:root {
+    --bg-color: white;
+    --text-color: #4a4a4a;
+    --text-color-light: #6e6e6e;
+    --main-color: #1983ca;
+    --main-color-hover: #1c92e1;
+    --main-color-light-hover: #f4f9fc;
+    --hairline-color: #e3e3e3;
+    --footer-bg-color: #f5f5f5;
+}
+
 body {
-    font-family: sans-serif;
+    color: var(--text-color);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.page-block {
+    padding: 0 1rem;
+    background-color: var(--bg-color);
+}
+
+.page-block-content {
+    max-width: 80rem;
+    margin: auto;
+}
+
+/* header */
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    border: 5px solid red;
+}
+
+.menu-main {
+    flex: 1;
+}
+
+.logo-main {
+    font-family: 'Staatliches', cursive;
+    font-size: 2.6rem;
+    margin-right: 1rem;
+}
+
+.menu-main-item {
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0 0.5rem;
+    color: var(--text-color-light);
+}
+
+.menu-main-item:hover {
+    color: var(--main-color);
+}
+
+/* button */
+
+.button {
+    font-weight: 700;
+    text-decoration: none;
+    background-color: var(--bg-color);
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    padding: 0.6rem 1rem;
+    border-radius: 0.1rem;
+    transition: 200ms;
+}
+
+.button:hover {
+    background-color: var(--main-color-light-hover);
+}
+
+.button-primary {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+}
+
+.button-primary:hover {
+    background-color: var(--main-color-hover);
+}
+
+.button-danger {
+    background-color: red;
+    color: var(--bg-color);
+}
+
+.button-danger:hover {
+    background-color: tomato;
 }

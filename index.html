@@ -5,13 +5,35 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
     <script defer src="src/index.js"></script>
     <title>Tuto HTML responsive</title>
 </head>
 <body>
 
-<div id="app"></div>
+<div class="page-block">
+    <header class="header-main page-block-content">
+        <p class="logo-main">Gust</p>
 
+        <nav class="menu-main">
+            <div>
+                <a class="menu-main-item" href="#">Start a company</a>
+                <a class="menu-main-item" href="#">Grow your startup</a>
+                <a class="menu-main-item" href="#">Raise capital</a>
+            </div>
+        </nav>
+
+        <div class="menu-main-cta">
+            <a class="menu-main-item" href="#">Sign in</a>
+            <a class="button button-primary" href="#">Get started</a>
+            <a class="button button-danger" href="#">Delete</a>
+        </div>
+    </header>
+</div>
 
 </body>
 </html>

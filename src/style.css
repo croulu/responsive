@@ -93,7 +93,7 @@ body {
     }
 
     .hamburger-navigation input:checked ~ .hamburger-items {
-       display: flex;
+        display: flex;
     }
 
 }
@@ -134,6 +134,64 @@ body {
     background-color: tomato;
 }
 
+
+/* hero */
+
+.hero-main {
+    text-align: center;
+}
+
+.hero-main-image {
+    margin-top: 4rem;
+    max-width: 100%;
+}
+
+.hero-main-subtitle {
+    font-size: 1.2rem;
+    margin-block-start: 0em;
+}
+
+@media screen and (min-width: 760px) {
+    .hero-main {
+        display: flex;
+        height: 40vw;
+        max-height: 32rem;
+        text-align: left;
+        align-items: center;
+        position: relative;
+        padding: 2rem 0;
+    }
+
+    .hero-main-content {
+        flex: 1;
+    }
+
+    .hero-main-title {
+        font-size: 3rem;
+        margin: 0;
+        font-weight: 500;
+    }
+
+    .hero-main-subtitle {
+        font-size: 2rem;
+        margin-block-start: 0em;
+    }
+
+    .hero-main-image {
+        height: 80%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+.hero-main-content {
+    align-self: flex-start;
+    padding-top: 3rem;
+}
+    .hero-main-title {
+        font-size: 6rem;
+    }
+
+}
 
 /* helpers */
 
